@@ -20,7 +20,7 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 const date = moment.tz('America/Bogota').format('DD/MM/YYYY')
 const time = moment.tz('America/Argentina/Buenos_Aires').format('LT')
 let wa = m.key.id.length > 21 ? 'Android' : m.key.id.substring(0, 2) == '3A' ? 'IOS' : 'whatsapp web'
-let submenu = `╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩
+let submenu = `
 ┊┏━━━━━━━━━━━━━━•
 ┊┃ ┏━━━━━━━━━━━━━━•
 ┊┃ ┃ \`👥 ${usuario.Language === 'es' ? 'INFO DEL USUARIO' : usuario.Language === 'en' ? 'USER INFO' :  usuario.Language === 'ar' ? ' معلومات المستخدم' : usuario.Language === 'pt' ? 'INFORMAÇÃO DE USUÁRIO' : usuario.Language === 'id' ? 'INFO PENGGUNA' : usuario.Language === 'rs' ? 'ИНФОРМАЦИЯ О ПОЛЬЗОВАТЕЛЕ' : usuario.Language}\`
@@ -35,8 +35,7 @@ let submenu = `╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩
 ┊┃ ┃ 
 ┊┃ ┃${lenguaje.menu.text11} ${rtotalreg} de ${totalreg}
 ┊┃ ┗━━━━━━━━━━━━━━•
-┊┗━━━━━━━━━━━━━━•
-╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩ 
+┊┗━━━━━━━━━━━━━━• 
 
 ${pickRandom([`\`𝐐𝐮𝐢𝐞𝐫𝐞𝐬 𝐨𝐛𝐭𝐞𝐧𝐞𝐫 𝐭𝐮 𝐛𝐨𝐭 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐝𝐨?\`
 https://www.instagram.com/alcashop.ff`, `\`□ CÓMO INSTALAR EL BOT\`\n${yt}`, `\`¿Qué hay de nuevo?\`\n• Pon : ${prefix}nuevo`, `\`💫 INFÓRMATE SOBRE LAS NUEVAS ACTUALIZACIONES, NOVEDADES DEL BOT AQUÍ\`\n${nna}`, `\`🌟¿Te agrada el bot? califica nuestro repo con una estrellita ☺\`\n${md}`, `Activar tu bot 24/7 con nuestro hosting\n${host}`])}\n\n`
@@ -156,7 +155,7 @@ let menuSticker= `
 
 if (command == 'menu' || command == 'help') {
 m.react('💫') 
-let menu = `╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩
+let menu = `
 ┊┏━━━━━━━━━━━━━━•
 ┊┃ ┏━━━━━━━━━━━━━━•
 ┊┃ ┃${lenguaje['smsWel']()} @${sender.split("@")[0]} ${user.registered === true ? 'ͧͧͧͦꙶͣͤ✓' : ''} 👋🏻
@@ -165,7 +164,6 @@ let menu = `╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩
 ${pickRandom([`\`¿𝐐𝐮𝐢𝐞𝐫𝐞𝐬 𝐨𝐛𝐭𝐞𝐧𝐞𝐫 𝐭𝐮 𝐛𝐨𝐭 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐝𝐨?\`
 https://www.instagram.com/alcashop.ff`, `\`□ CÓMO INSTALAR EL BOT\`\n${yt}`, `\`¿Qué hay de nuevo?\`\n• Pon : ${prefix}nuevo`, `\`💫 INFÓMARTE SOBRE LAS NUEVAS ACTUALIZACIONES, NOVEDADES DEL BOT AQUI\`\n${nna}`, `\`🌟¿Te agrada el bot? califica nuestro repositorio con una estrellita ☺\`\n${md}\``])}
 
-╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩
 ┊┏━━━━━━━━━━━━━━•
 ┊┃ *🟢 ＬＩＳＴＡ ＤＥ ＣＯＭＡＮＤＯＳ*
 ┊┃━━━━━━━━━━━━━━•
@@ -176,8 +174,7 @@ https://www.instagram.com/alcashop.ff`, `\`□ CÓMO INSTALAR EL BOT\`\n${yt}`, 
 ┊┃⚙️ ${prefix}menu4 | menubuscadores
 ┊┃⚙️ ${prefix}menu5 | menujuegos
 ┊┃⚙️ ${prefix}menu10 | menuSticker
-┊┃━━━━━━━━━━━━━━•
-╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩`
+┊┃━━━━━━━━━━━━━━•`
 conn.sendMessage(m.chat, { text: menu,  
 contextInfo:{  
 forwardedNewsletterMessageInfo: { 
@@ -436,7 +433,7 @@ sourceUrl: `${pickRandom([nna, nn, md, yt])}`
 
 if (command == 'allmenu' || command == 'menucompleto') {
 m.react('🙌') 
-let menu = `╔══════ ≪ •❈• ≫ ══════╗
+let menu = `
 ║◤━━━━━ ☆. ∆ .☆ ━━━━━◥
 ║${lenguaje['smsWel']()} @${sender.split("@")[0]} ${user.registered === true ? 'ͧͧͧͦꙶͣͤ✓' : ''} 👋🏻
 ║◤━━━━━ ☆. ∆ .☆ ━━━━━◥
@@ -457,12 +454,9 @@ let menu = `╔══════ ≪ •❈• ≫ ══════╗
 ║ 
 ║${lenguaje.menu.text11} ${rtotalreg} de ${totalreg}
 ║◤━━━━━ ☆. ∆ .☆ ━━━━━◥
-╚══════ ≪ •❈• ≫ ══════╝
 
 ===============================
 ${lenguaje.menu.text12}
-===============================
-
 ┊┏━━━━━━━━━━━━━━•
 ┊┃ *🚀 ＭＥＮＵ ＤＥＳＣＡＲＧＡＳ 🚀*
 ┊┃━━━━━━━━━━━━━━•
