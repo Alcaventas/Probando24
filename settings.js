@@ -4,14 +4,14 @@ const chalk = require('chalk')
 const { en, es, ar, id, pt, rs} = require('./libs/idiomas/total-idiomas.js') 
 
 //---------[ PROPIETARIO/OWNER ]---------
-global.owner = [["447700168473", "Owner", true], ["593968585383"], ["5492266466080"], ["595986172767"], ["5492266613038"], ["5217294888993"],["5214437863111"], ["51906662557"], ["595992302861"], ["5217441298510"], ["5491155983299"], ["5493795319022"], ["5217821153974"], ["573012482597"]]
+global.owner = [["8241050228", "Alca", true], ["593968585383"], ["5492266466080"], ["595986172767"], ["5492266613038"], ["5217294888993"],["5214437863111"], ["51906662557"], ["595992302861"], ["5217441298510"], ["5491155983299"], ["5493795319022"], ["5217821153974"], ["573012482597"]]
 global.mods = []
 global.premium = []  
 global.blockList = []  
 
 //---------[ NOMBRE/INFO ]---------
-global.botname = "𝐍𝐨𝐯𝐚𝐁𝐨𝐭-𝐌𝐃"
-global.wm = 'Ｎ Ｏ Ｖ Ａ Ｂ Ｏ Ｔ- Ｍ Ｄ 💫'
+global.botname = "𝗔𝗹𝗰𝗮-𝗕𝗼𝘁"
+global.wm = '𝗔𝗹𝗰𝗮-𝗕𝗼𝘁'
 global.vs = '1.1.0'
 
 //Función beta : escribe el número que quiere que sea bot para que mande el Código de 8 digitos
@@ -71,8 +71,8 @@ global.APIKeys = {
 };
  
 //---------[ STICKERS ]---------
-global.packname = "𝐍𝐨𝐯𝐚𝐁𝐨𝐭-𝐌𝐃"
-global.author = `${vs}`
+global.packname = "𝗔𝗹𝗰𝗮-𝗕𝗼𝘁"
+global.author = `Alcashop.ff`
  
 //---------[ IMAGEN ]---------
 global.imagen1 = fs.readFileSync('./media/menu.jpg')
@@ -82,11 +82,7 @@ global.noperfil = fs.readFileSync('./media/sinfoto.jpg')
 
 //---------[ ENLACES ]---------
 global.md = 'https://github.com/elrebelde21/NovaBot-MD'
-global.yt = 'https://www.youtube.com/@elrebelde.21'
-global.tiktok = 'tiktok.com/@elrebelde21'
-global.fb = 'https://www.facebook.com/elrebelde21'
-global.faceb = 'https://facebook.com/groups/872989990425789/'
-global.paypal = 'https://paypal.me/OfcGB' 
+global.ig = 'https://www.instagram.com/alcashop.ff'
 
 global.host = 'https://chat.whatsapp.com/GQ82mPnSYnm0XL2hLPk7FV' //Infinity-host
 global.nna = 'https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A' //Update 
